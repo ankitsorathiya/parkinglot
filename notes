@@ -1,0 +1,35 @@
+//following are entities
+
+ParkingLot
+    Id
+    Name
+    location(lat,long)
+
+
+VehicleType
+    id
+    name
+
+
+VehicleCharges
+    id
+    vehicleTypeId
+    hoursParked
+    charges
+
+
+
+ParkVehicle
+    Id
+    parkingLotId
+    vehicleTypeId
+    vehicleNumber
+    checkInTime
+    checkOutTime
+    durationParked// computable from checkoutTime-checkInTime// for easy access
+    charges
+
+
+
+
+
